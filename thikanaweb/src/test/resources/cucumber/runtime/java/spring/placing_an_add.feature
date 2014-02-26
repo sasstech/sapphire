@@ -1,6 +1,8 @@
 Feature:  As a user who wants to share a room, the user wants to place an add on the website.
 
-  Scenario: The user should be shown the two options
-    Given I access the site to place the Ad
-    When I choose Place and Ad option
-    Then I should get two options
+  Scenario: The user who want to rent a room should be shown two options
+    When I access the site to place the Ad to rent a room
+    Then I should be shown the following options
+    |Rent a room|
+    |Want a room|
+
