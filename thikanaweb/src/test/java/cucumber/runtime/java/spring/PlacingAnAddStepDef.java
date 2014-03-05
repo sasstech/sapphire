@@ -5,12 +5,12 @@ import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import org.junit.Assert;
 
-public class PlacingAnAddStepDef {
-
+public class PlacingAnAddStepDef extends AbstractWebDriverTest{
 
 
     @When("I access the site to place the Ad to rent a room")
     public void access_site(){
+        getDriver().navigate().to("http://localhost:8081");
 
     }
 
